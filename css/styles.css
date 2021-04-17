@@ -20,14 +20,20 @@ body {
   margin: 0;
 }
 
-.container-nav {
-  display: flex;
+.container {
+  box-sizing: border-box;
   align-items: center;
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+img {
+  display: block;
+}
+header {
+  border: 1px solid #ececec;
 }
 .nav-flex {
   display: flex;
@@ -115,8 +121,15 @@ body {
 /* promo */
 .promo-section {
   background-color: var(--background-dark);
+  height: 600px;
 }
+
 .promo-text {
+  width: 696px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 30px;
+
   color: var(--light-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -126,6 +139,12 @@ body {
   text-transform: uppercase;
 }
 .button-main {
+  display: block;
+  padding: 10px 32px;
+  min-width: 200;
+  margin-left: auto;
+  margin-right: auto;
+
   background-color: var(--accent-color);
   color: var(--light-text-color);
   font-family: inherit;
@@ -143,19 +162,54 @@ body {
 .highlights {
   background-color: var(--background-primary);
 }
+.highlights .list {
+  display: flex;
+}
+.highlights-list {
+  width: 270px;
+}
+.highlights-list:not(:last-child) {
+  margin-right: 30px;
+}
+
 .highlights-main {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  margin-top: 94px;
 }
 .highlights-secondary {
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 10px;
+  margin-bottom: 94px;
 }
 /*projects*/
+.projects {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.project-list {
+  display: flex;
+}
+.project-cards {
+  margin-bottom: 94px;
+}
+.project-cards:not(:last-child) {
+  margin-right: 30px;
+}
+.team {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.team-cards {
+  display: flex;
+}
 .projects,
 .team {
   font-weight: 700;
@@ -168,7 +222,11 @@ body {
 .team-section {
   background-color: var(--background-secondary);
 }
+.team-card:not(:last-child) {
+  margin-right: 30px;
+}
 .team-card {
+  margin-bottom: 94px;
   background-color: var(--background-primary);
   width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -176,6 +234,8 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .team-main-text {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -183,6 +243,8 @@ body {
   letter-spacing: 0.03em;
 }
 .team-secondary-text {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.18;
@@ -245,6 +307,13 @@ body {
 footer {
   background-color: var(--background-dark);
 }
+.container footer {
+  display: block;
+}
+.logo-container {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
 .footer-adress-link {
   color: var(--light-text-color);
   font-size: 14px;
@@ -264,7 +333,13 @@ footer {
   text-decoration: none;
   cursor: pointer;
 }
+.footer-list:not(:last-child) {
+  padding-bottom: 9px;
+}
 address a:hover,
 address a:focus {
   color: var(--accent-color);
+}
+address {
+  padding-bottom: 60px;
 }
