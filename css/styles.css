@@ -182,7 +182,8 @@ header {
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 .highlights-secondary {
   color: var(--secondary-text-color);
@@ -190,6 +191,7 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-top: 10px;
+  margin-bottom: 0;
 }
 /*projects*/
 .projects-section {
