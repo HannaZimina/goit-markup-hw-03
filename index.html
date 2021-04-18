@@ -16,8 +16,7 @@
 <body>
     <!-- header -->
     <header>
-        <div class="container">
-        <div class="nav-flex">
+        <div class="container nav-flex">
         <nav  class="nav-flex">
             <a href="./index.html" lang=en class="logo-dark"><span class="accent-logo">Web</span>Studio</a>
             <ul class="navigation-links list">
@@ -31,7 +30,6 @@
             <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a> </li>
         </ul>
         </div>
-        </div>
     </header>
     <!-- main -->
     <main>
@@ -43,8 +41,8 @@
         </section>
         <section class="highlights">
             <div class="container">
-        <h2 class="hidden">Особенности</h2>
-        <ul class="highlights list">
+        <h2 class="visually-hidden">Особенности</h2>
+        <ul class="list">
             <li class="highlights-list">
                 <h3 class="highlights-main">Внимание к деталям</h3>
                 <p class="highlights-secondary">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -64,7 +62,7 @@
         </ul></div>
         </section>
         <!-- projects-->
-        <section>
+        <section class="projects-section">
             <div class="container">
             <h2 class="projects">Чем мы занимаемся</h2>
             <ul class="projects-list list">
@@ -82,23 +80,27 @@
             <ul class="container team-cards list">
                 <li class="team-card">
                     <img src="./images/team/ihor.jpg" alt="Портрет Игоря Демьяненко" width=270>
-                    <h3 class="team-main-text">Игорь Демьяненко</h3>
-                    <p lang=en class="team-secondary-text">Product Designer</p>
+                    <div class="team-card-text">
+                        <h3 class="team-main-text">Игорь Демьяненко</h3>
+                        <p lang=en class="team-secondary-text">Product Designer</p></div>
                 </li>
                 <li class="team-card">
                     <img src="./images/team/olha.jpg" alt="Портрет Ольги Репиной" width=270>
-                    <h3 class="team-main-text">Ольга Репина</h3>
-                    <p lang=en class="team-secondary-text">Frontend Developer</p>                   
+                    <div class="team-card-text">
+                        <h3 class="team-main-text">Ольга Репина</h3>
+                        <p lang=en class="team-secondary-text">Frontend Developer</p></div>                  
                 </li>
                 <li class="team-card">
                     <img src="./images/team/nikolaj.jpg" alt="Портрет Николая Тарасова" width=270>
-                    <h3 class="team-main-text">Николай Тарасов</h3>
-                    <p lang=en class="team-secondary-text">Marketing</p>                  
+                    <div class="team-card-text">
+                        <h3 class="team-main-text">Николай Тарасов</h3>
+                        <p lang=en class="team-secondary-text">Marketing</p></div>                
                 </li>
                 <li class="team-card">
                     <img src="./images/team/mihail.jpg" alt="Портрет Михаила Ермакова" width=270>
-                    <h3 class="team-main-text">Михаил Ермаков</h3>
-                    <p lang=en class="team-secondary-text">UI Designer</p>
+                   <div class="team-card-text">
+                       <h3 class="team-main-text">Михаил Ермаков</h3>
+                       <p lang=en class="team-secondary-text">UI Designer</p></div>
                 </li>
             </ul>
             </div>
@@ -107,9 +109,8 @@
     <!-- footer -->
     <footer>
         <div class="container">
-            <div class="logo-container">
+            
         <a href="./index.html" lang=en class="logo-light"><span class="accent-logo">Web</span>Studio</a>
-            </div>
         <address>
             <ul class="list">
                 <li class="footer-list"><a class="footer-adress-link" href="https://goo.gl/maps/DHRGLdLPz4CvpjzV8" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
@@ -117,7 +118,6 @@
                 <li class="footer-list"><a class="footer-number-link" href="tel:+380991111111">+38 099 111 11 11</a> </li>
             </ul>
         </address>
-        </div>
     </footer>
 </body>
 
