@@ -276,6 +276,9 @@ header {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.client-list {
+  display: flex;
+}
 
 .clients {
   font-weight: 700;
@@ -287,16 +290,8 @@ header {
   margin-top: 0;
   margin-bottom: 50px;
 }
-.client-icons {
+.client-link-list {
   display: inline-flex;
-}
-.client-icon {
-  width: 106px;
-  height: 60px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-right: 32px;
-  margin-left: 32px;
 }
 
 .client-link-list:not(:last-child) {
@@ -304,12 +299,13 @@ header {
 }
 
 .client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
-  height: 92px;
-  display: block;
+  height: 90px;
 
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
   border-radius: 4px;
 }
 
